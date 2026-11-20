@@ -4,7 +4,7 @@
 #' Counts the number of positive and negative word matches in a document
 #' and calculates the ratio between positive and negative words.
 #'
-#' @param words A character vector containing the words from a document.
+#' @param document_words A character vector containing the words from a document.
 #' @param positive_words A character vector containing positive words to search for.
 #' @param negative_words A character vector containing negative words to search for.
 #'
@@ -20,11 +20,11 @@
 #' negative_words <- c("sad")
 #' sentiment_score(words, positive, negative)
 #'
-sentiment_score <- function(words, positive_words, negative_words) {
+sentiment_score <- function(document_words, positive_words, negative_words) {
 
-  positive_count <- compare_words(words, positive_words)
+  positive_count <- compare_words(document_words, positive_words)
 
-  negative_count <- compare_words(words, negative_words)
+  negative_count <- compare_words(document_words, negative_words)
 
   ratio <- if (negative_count == 0) {
     NA_real_

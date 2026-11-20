@@ -9,7 +9,7 @@
 #' @returns A character vector containing the individual words.
 #' @export
 #'
-#' @examples words <- read_text("path/to/your/textfile.txt")
+#' @examples document_words <- read_text("path/to/your/textfile.txt")
 #'
 
 read_text <- function(file_path) {
@@ -33,8 +33,8 @@ read_text <- function(file_path) {
   text <- gsub("[.,;]", "", text)
 
   # Split into separate elements
-  words <- unlist(strsplit(text, split = "\\s+"))
-  return(words)
+  document_words <- unlist(strsplit(text, split = "\\s+"))
+  return(document_words)
 }
 
 

@@ -17,6 +17,6 @@ Imports a text file, converts the text to lowercase, removes punctuation,
 and splits the text into individual words for sentiment analysis.
 }
 \examples{
-words <- read_text("path/to/your/textfile.txt")
+document_words <- read_text("path/to/your/textfile.txt")
 
 }

@@ -4,22 +4,22 @@
 \alias{compare_words}
 \title{Compare words}
 \usage{
-compare_words(words, word_list)
+compare_words(document_words, word_list)
 }
 \arguments{
-\item{words}{A character vector containing words from a document.}
+\item{document_words}{A character vector containing words from a document.}
 
 \item{word_list}{A character vector containing positive or negative words.}
 }
 \value{
-The number of matching words.
+The number of matching word occurences.
 }
 \description{
 Counts how many words from a positive or negative word list
 appear in the text of the document.
 }
 \examples{
-words <- c("nauseous", "nauseated", "happy")
-compare_words(words, c("nause*"))
+document_words <- c("nauseous", "nauseated", "happy")
+compare_words(document_words, c("nause*"))
 
 }

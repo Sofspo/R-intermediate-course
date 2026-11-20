@@ -4,10 +4,10 @@
 \alias{sentiment_score}
 \title{Sentiment score}
 \usage{
-sentiment_score(words, positive_words, negative_words)
+sentiment_score(document_words, positive_words, negative_words)
 }
 \arguments{
-\item{words}{A character vector containing the words from a document.}
+\item{document_words}{A character vector containing the words from a document.}
 
 \item{positive_words}{A character vector containing positive words to search for.}
 
